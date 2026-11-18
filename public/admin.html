@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#faf5ef" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Product admin — Divas Bakers</title>
+    <link rel="icon" href="/images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/admin.css" />
+    <script src="/admin.js" defer></script>
+  </head>
+  <body class="admin-page">
+    <a class="skip-link" href="#admin-main">Skip to content</a>
+    <header class="admin-topbar">
+      <a class="brand" href="/" aria-label="Divas Bakers home">
+        <img class="brand__mark" src="/images/logo.png" alt="" width="54" height="54" />
+        <span class="brand__name">Divas Bakers<span class="brand__sub">PRODUCT ADMIN</span></span>
+      </a>
+      <a class="admin-return" href="/">Back to website <span aria-hidden="true">↗</span></a>
+    </header>
+    <main class="admin-main" id="admin-main">
+      <section class="admin-login admin-panel" id="login-panel" aria-labelledby="login-title">
+        <p class="eyebrow"><span class="eyebrow__line"></span> Owner access</p>
+        <h1 id="login-title">Sign in to manage<br /><em>your products.</em></h1>
+        <p class="admin-intro">Add product photos, size options and KSh prices. Published products appear on the website.</p>
+        <form id="login-form" class="admin-login-form">
+          <label for="admin-password">Admin password</label>
+          <input id="admin-password" type="password" autocomplete="current-password" required />
+          <button class="button button--dark" type="submit">Sign in <span aria-hidden="true">↗</span></button>
+          <p class="admin-status" id="login-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="admin-dashboard" id="dashboard" hidden>
+        <div class="admin-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__line"></span> Your bakery catalog</p>
+            <h1>Manage <em>products.</em></h1>
+            <p class="admin-intro">Changes save to the shared website as soon as you save a product.</p>
+          </div>
+          <button class="admin-logout" id="logout-button" type="button">Sign out</button>
+        </div>
+        <div class="admin-columns">
+          <section class="admin-panel admin-editor" aria-labelledby="editor-title">
+            <h2 id="editor-title">Add a product</h2>
+            <form id="product-form">
+              <input id="product-id" type="hidden" />
+              <label for="product-name">Product name</label>
+              <input id="product-name" name="name" maxlength="100" required placeholder="e.g. Chocolate celebration cake" />
+
+              <label for="product-category">Category</label>
+              <input id="product-category" name="category" maxlength="60" required placeholder="e.g. Cakes, pastries, bread" />
+
+              <label for="product-description">Description <span class="admin-optional">(optional)</span></label>
+              <textarea id="product-description" name="description" maxlength="500" rows="3" placeholder="A short description for customers"></textarea>
+
+              <fieldset class="size-editor">
+                <legend>Sizes and prices</legend>
+                <p class="admin-help">Enter a size or serving count and its price in Kenyan shillings.</p>
+                <div id="size-rows"></div>
+                <button class="admin-secondary" id="add-size" type="button">+ Add another size</button>
+              </fieldset>
+
+              <label class="image-label" for="product-image">Product photo <span class="admin-optional" id="image-optional"></span></label>
+              <input id="product-image" type="file" accept="image/jpeg,image/png,image/webp" />
+              <p class="admin-help">JPEG, PNG, or WebP. Images are resized before upload.</p>
+              <img class="image-preview" id="image-preview" alt="Selected product photo preview" hidden />
+
+              <label class="admin-checkbox"><input id="product-active" type="checkbox" checked /> Show this product on the website</label>
+              <div class="admin-form-actions">
+                <button class="button button--dark" id="save-product" type="submit">Save product <span aria-hidden="true">↗</span></button>
+                <button class="admin-secondary" id="cancel-edit" type="button" hidden>Cancel edit</button>
+              </div>
+              <p class="admin-status" id="product-status" role="status" aria-live="polite"></p>
+            </form>
+          </section>
+
+          <section class="admin-panel admin-inventory" aria-labelledby="inventory-title">
+            <div class="inventory-heading"><h2 id="inventory-title">Your products</h2><span class="inventory-count" id="product-count">0</span></div>
+            <p class="admin-help" id="inventory-empty">Your product list is empty. Add your first item using the form.</p>
+            <div class="inventory-list" id="inventory-list"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

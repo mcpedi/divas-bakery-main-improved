@@ -1,0 +1,14 @@
+# TODO
+
+- [x] **Homepage branding and calls to action** — The homepage introduces Divas Bakers with the supplied logo and makes its baking, cake, catering, and room-decoration services clear through the existing site calls to action.
+- [x] **Bakery menu** — The menu is organized into easy-to-scan categories and provides editable product-name and description placeholders, with blank prices labeled in Kenyan shillings (KSh).
+- [x] **Custom cake inquiry form** — Customers can provide their name, WhatsApp number, event date, serving count, cake style/flavour, optional KSh budget, and notes; the form opens WhatsApp with a prefilled message to +254743694672 for the customer to review and send. This is an inquiry, not a confirmed order, and submissions are not stored on the website.
+- [x] **Bakery story** — The About section shares the bakery’s story, values, and approach to baking.
+- [x] **Customer ratings and editable reviews** — Visitors can submit a review with a 1–5-star rating, name, and text, then edit or remove reviews in the same browser. Reviews are stored locally on the visitor’s device only; no ratings or customer quotes are invented or represented as shared/public submissions.
+- [x] **Homepage About Us and operating hours** — The homepage has an explicitly labeled About Us section and a Monday–Sunday opening-hours schedule with a clear editable slot for each day; the bakery’s actual times were not supplied, so no hours are invented.
+- [x] **Photo gallery** — A gallery showcases breads, pastries, cakes, and the bakery atmosphere with descriptive image text.
+- [x] **Custom cakes and pastries gallery** — The homepage gallery focuses on custom cakes and pastries with descriptive image text. Photos not supplied by the bakery are clearly identified as illustrative placeholders rather than actual products.
+- [x] **Divas Bakers identity** — The supplied logo is used in the header, footer and favicon; the supplied business name, tagline and listed services are used consistently in the site and project metadata, and colour accents align with the logo.
+- [x] **Simplified Find Us section** — The section contains only contact/location information, operating hours, and a WhatsApp contact link. It uses the supplied Thika Road/Nairobi location and WhatsApp number as a tap-to-call phone number, and clearly leaves unprovided opening hours to be confirmed.
+- [x] **Responsive, bakery-inspired and accessible presentation** — Navigation and layouts adapt to phones, tablets, and desktops; warm paper/grain styling and subtle reveal motion respect reduced-motion preferences, with readable typography, descriptive image text, and keyboard-operable controls.
+- [x] **GitHub README** — Added setup, local-run, editing, and deployment instructions that match this repository’s static Node app and `public/` output, and disclosed that logo/gallery assets currently use Manus-managed storage paths and are not bundled in the GitHub repository.
